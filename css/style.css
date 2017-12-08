@@ -11,6 +11,13 @@ tr, td, th, tbody, thead, table {
     padding: 0;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 body > header {
     height: 7vh;
     background: #292C33;
@@ -48,27 +55,26 @@ footer .info {
 .content {
     height: 88vh;
     margin: 0 auto;
+    /*border: 1px solid blue;*/
 }
 
 .content .wraper {
-    top: 50%;
-    transform: translateY(-50%);
-    height: 600px;
-    position: relative;
-    width: 98vw;
+    height: 84vh;
+    border: 1px solid transparent;
+    width: 99%;
     margin: 0 auto;
+    padding-top: 20px;
+    /*border: 1px solid yellow;*/
+    overflow: scroll;
 }
 
 /*table */
 .content table {
     border: 1px solid #ccc;
-    position: absolute;
-    top: 50%;
-    /*left: 50%;*/
-    transform: translateY(-50%);
     border-collapse: collapse;
     color: #ccc;
     width: 100%;
+    margin-top: 10px;
 }
 
 td, th {
@@ -77,4 +83,19 @@ td, th {
 
 tbody td:nth-child(3) {
     width: 70%;
+}
+
+tbody td:nth-child(1) {
+    text-align: center;
+}
+
+.scan {
+    border: 1px solid;
+}
+
+#search {
+    height: 24px;
+    width: 120px;
+    border: 1px solid;
+    border-radius: 3px;
 }
