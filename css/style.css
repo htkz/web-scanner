@@ -47,18 +47,16 @@ footer .info {
 
 .content {
     height: 88vh;
-    width: 70vw;
     margin: 0 auto;
 }
 
 .content .wraper {
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     height: 600px;
-    /*border: 1px solid red;*/
     position: relative;
-    /*background-color: #292B2C;*/
+    width: 98vw;
+    margin: 0 auto;
 }
 
 /*table */
@@ -66,10 +64,11 @@ footer .info {
     border: 1px solid #ccc;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /*left: 50%;*/
+    transform: translateY(-50%);
     border-collapse: collapse;
     color: #ccc;
+    width: 100%;
 }
 
 td, th {
