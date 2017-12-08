@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background-color: #292B2C;
+
+}
+
+tr, td, th, tbody, thead, table {
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    height: 7vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+header .search {
+    margin-right: 20px;
+}
+
+footer {
+    height: 5vh;
+    background: black;
+    color: #fff;
+    position: relative;
+}
+
+footer .info {
+    position: absolute;
+    font-size: 14px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #999;
+}
+
+.content {
+    height: 88vh;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.content .wraper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 600px;
+    /*border: 1px solid red;*/
+    position: relative;
+    background-color: #292B2C;
+}
+
+/*table */
+.content table {
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    color: #ccc;
+}
+
+td, th {
+    padding: 8px;
+}
+
+tbody td:nth-child(3) {
+    width: 70%;
+}
