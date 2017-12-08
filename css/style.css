@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background-color: #292B2C;
+    /*background-color: #292B2C;*/
+    background: #31353D;
 
 }
 
@@ -12,7 +13,7 @@ tr, td, th, tbody, thead, table {
 
 body > header {
     height: 7vh;
-    background: #000;
+    background: #292C33;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -30,7 +31,7 @@ header .search {
 
 footer {
     height: 5vh;
-    background: black;
+    background: #292C33;
     color: #fff;
     position: relative;
 }
@@ -57,7 +58,7 @@ footer .info {
     height: 600px;
     /*border: 1px solid red;*/
     position: relative;
-    background-color: #292B2C;
+    /*background-color: #292B2C;*/
 }
 
 /*table */
