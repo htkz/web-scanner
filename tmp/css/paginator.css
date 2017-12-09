@@ -1,0 +1,17 @@
+.paginator {
+    border: 1px solid #ccc;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.paginator .page {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.paginator .page:hover,
+.paginator .page.curPage {
+    color: #E6686D;
+}
