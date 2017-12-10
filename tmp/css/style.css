@@ -1,6 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    /*background-color: #292B2C;*/
     background: #31353D;
 
 }
@@ -19,6 +22,7 @@ button:focus {
 }
 
 body > header {
+    /*padding: 15px 0;*/
     height: 7vh;
     background: #292C33;
     color: #fff;
@@ -33,7 +37,8 @@ header .logo {
 }
 
 footer {
-    height: 5vh;
+    /*height: 5vh;*/
+    height: 30px;
     background: #292C33;
     color: #fff;
     position: relative;
@@ -49,21 +54,23 @@ footer .info {
 }
 
 .content {
-    height: 88vh;
+    /*height: 88vh;*/
     margin: 0 auto;
     position: relative;
     /*border: 1px solid blue;*/
+    overflow: visible;
+
 }
 
 .content .result {
-    height: 84vh;
     border: 1px solid transparent;
-    width: 99%;
-    margin: 0 auto;
-    padding-top: 20px;
-    /*border: 1px solid yellow;*/
-    overflow: scroll;
 }
+
+.content .table-container {
+    padding: 10px;
+    margin-left: 10px;
+}
+
 
 /*table */
 .content table {
@@ -79,7 +86,7 @@ td, th {
 }
 
 tbody td:nth-child(3) {
-    width: 70%;
+    /*width: 70%;*/
 }
 
 tbody td:nth-child(1) {
@@ -91,8 +98,19 @@ tbody td:nth-child(1) {
     color: #ccc;
     cursor: pointer;
     border-radius: 3px;
+    /*float: right;*/
+    /*margin-bottom: 5px;*/
+    margin-right: 10px;
+    padding: 3px;
 }
 
 .backToSearch span:hover {
     opacity: .75;
+}
+
+.filter > div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #ccc;
+    width: 20%;
 }
