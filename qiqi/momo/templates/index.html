@@ -1,13 +1,14 @@
 <!DOCTYPE>
 <html>
 	<head>
+        {% load static %}
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/paginator.css">
-        <link rel="stylesheet" href="css/search.css">
-        <link rel="stylesheet" href="css/structure.css">
-        <link rel="stylesheet" href="css/layout.css">
-        <link rel="stylesheet" href="css/scroll.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/paginator.css' %}">
+        <link rel="stylesheet" href="{% static 'css/search.css' %}">
+        <link rel="stylesheet" href="{% static 'css/structure.css' %}">
+        <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+        <link rel="stylesheet" href="{% static 'css/scroll.css' %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 	</head>
@@ -19,17 +20,33 @@
             </div>
         </header>
         <div class="content">
-            <!-- <div id="result" class="result" style="display:none;"> -->
-            <div id="result" class="result">
+            <div id="result" class="result" style="display:none;">
+            <!-- <div id="result" class="result"> -->
                 <div class="container">
                     <div class="structure">
                         <h2>Content</h2>
-                        <p class="level1">demo.aisec.cn</p>
-                        <p class="level2">demo</p>
-                        <p class="level3">aisec</p>
-                        <p class="level4">html_link.php</p>
-                        <p class="level4">js_link.php</p>
-                        <p class="level100">js_link.php</p>
+                        <div class="level1">
+                            <p>
+                                demo.aisec.cn
+                                <i class="fa fa-plus trigger-show"></i>
+                                <i class="fa fa-minus trigger-hide" style="display:none;"></i>
+                            </p>
+                            <div class="level2" style="display:none;">
+                                <p>aisec</p>
+                                    <div class="level3">
+                                        <p>
+                                            demo
+                                            <i class="fa fa-plus trigger-show"></i>
+                                            <i class="fa fa-minus trigger-hide" style="display:none;"></i>
+
+                                        </p>
+                                        <div class="level4">
+                                            <p>html_link.php</p>
+                                            <p>js_link.php</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="table-container">
                         <div class="filter">
@@ -144,8 +161,8 @@
             </div>
 
         </div>
-        <div class="search-wraper" style="display:none;">
-        <!-- <div class="search-wraper"> -->
+        <!-- <div class="search-wraper" style="display:none;"> -->
+        <div class="search-wraper">
             <div id="search" class="search">
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <input id="search-text" type="text" name="" value="" placeholder="Please input website here">
@@ -154,11 +171,11 @@
                 </div>
             </div>
         </div>
-        <script src="js/trans.js"></script>
-		<script src="js/main.js"></script>
-        <script src="js/paginator.js"></script>
-        <script src="js/search.js"></script>
-        <script src="js/result.js"></script>
-        <script src="js/test.js"></script>
+        <script src="{% static 'js/trans.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/paginator.js' %}"></script>
+        <script src="{% static 'js/search.js' %}"></script>
+        <script src="{% static 'js/result.js' %}"></script>
+        <script src="{% static 'js/test.js' %}"></script>
 	</body>
 </html>
