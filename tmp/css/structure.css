@@ -4,4 +4,15 @@
     color: #ccc;
     padding: 10px;
     overflow: scroll;
+    /*overflow-x: hidden;*/
+}
+
+
+/*make scroll bar invisible*/
+.structure {
+    -ms-overflow-style: none;
+    /*overflow: -moz-scrollbars-none;*/
+}
+::-webkit-scrollbar {
+    display: none;
 }
